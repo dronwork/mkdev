@@ -1,7 +1,14 @@
 
 # 1)Считать из файла все фильмы
 # 2)Вывести названия и рейтинг всех фильмов, в названии которых есть слово "Max"
+# 3)Добавляем 4,5 задания
 
+if ARGV[0] == "movies.txt" || ARGV[0] == nil
+  file_name = "movies.txt"
+else
+  puts "File not found !"
+  exit
+end
 
 file_movies = File.open("movies.txt")
 file_movies.each do |line|
