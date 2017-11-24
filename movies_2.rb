@@ -10,7 +10,7 @@ else
   exit
 end
 
-file_movies = File.open("movies.txt")
+file_movies = File.open(file_name)
 file_movies.each do |line|
   array_movie = line.split("|")
   name_movie = array_movie[1]
